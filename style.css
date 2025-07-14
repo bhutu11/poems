@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ffe6f0, #ffb6c1);
+    color: #6b3a4a;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+header {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #a64d79;
+    text-shadow: 1px 1px 2px #ffd6e8;
+    margin-bottom: 20px;
+  }
+  #passwordScreen {
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background: #ffb6c1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 9999;
+    color: #6b3a4a;
+  }
+  #passwordScreen input[type="password"] {
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border: none;
+    margin-top: 10px;
+    width: 80%;
+    max-width: 300px;
+    box-shadow: 0 0 5px rgba(107, 58, 74, 0.3);
+  }
+  #passwordScreen button {
+    margin-top: 15px;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #a64d79;
+    color: #ffe6f0;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(107, 58, 74, 0.4);
+    transition: background-color 0.3s ease;
+  }
+  #passwordScreen button:hover {
+    background-color: #d47ca7;
+  }
+  #errorMsg {
+    margin-top: 10px;
+    color: #9b1c31;
+    font-weight: 600;
+  }
+
+  /* Tabs styling */
+  #tabs {
+    max-width: 600px;
+    margin: 0 auto 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .tab-btn {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    border: none;
+    background-color: #ffc9db;
+    color: #6b3a4a;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(166, 77, 121, 0.3);
+    transition: background-color 0.3s ease;
+  }
+  .tab-btn.active, .tab-btn:hover {
+    background-color: #a64d79;
+    color: #ffe6f0;
+  }
+
+  #contentList {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffe6f0;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(166, 77, 121, 0.2);
+    padding: 15px 20px;
+  }
+  #contentList h2 {
+    color: #a64d79;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  #contentList ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  #contentList li {
+    padding: 10px;
+    border-bottom: 1px solid #f7b7cd;
+    font-size: 1.1rem;
+    color: #6b3a4a;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  #contentList li:hover {
+    background-color: #ffd1e4;
+  }
+
+  #contentView {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffe6f0;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(166, 77, 121, 0.2);
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+  }
+  #contentView h2 {
+    color: #a64d79;
+    margin-bottom: 12px;
+  }
+  #contentView p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    white-space: pre-line;
+    color: #6b3a4a;
+  }
+  #backBtn {
+    margin-top: 20px;
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #a64d79;
+    color: #ffe6f0;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(107, 58, 74, 0.4);
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+  }
+  #backBtn:hover {
+    background-color: #d47ca7;
+  }
+
+  @media (max-width: 400px) {
+    header {
+      font-size: 1.5rem;
+    }
+    #contentList li, #contentView p {
+      font-size: 1rem;
+    }
+    #contentView h2 {
+      font-size: 1.3rem;
+    }
+  }

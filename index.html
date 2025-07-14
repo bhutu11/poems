@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="style.css">
+<title>Poems</title>
+</head>
+<body>
+
+<div id="passwordScreen">
+  <h1>পাসওয়ার্ড দিন</h1>
+  <input type="password" id="passwordInput" placeholder="Password" autocomplete="off" />
+  <button onclick="checkPassword()">প্রবেশ</button>
+  <div id="errorMsg"></div>
+</div>
+
+<header>কবিতা ও</header>
+
+<div id="tabs" style="display:none;">
+  <button class="tab-btn active" id="poemsTab" onclick="switchTab('poems')">কবিতা</button>
+  <button class="tab-btn" id="songsTab" onclick="switchTab('songs')">গান</button>
+</div>
+
+<section id="contentList" style="display:none;">
+  <h2 id="listTitle">Poem Titles</h2>
+  <ul id="titlesList">
+    <!-- Titles will be loaded here -->
+  </ul>
+</section>
+
+<section id="contentView">
+  <h2 id="contentTitle"></h2>
+  <p id="contentText"></p>
+  <button id="backBtn" onclick="showList()">← পিছনে যান</button>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
