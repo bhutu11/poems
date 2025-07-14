@@ -1,0 +1,19 @@
+{
+    "poems": [
+      {
+        "title": "The Sun's Warm Hug",
+        "text": "Golden rays gently touch the earth,\nWhispering tales of dawn's rebirth.\nIn every beam, a warm embrace,\nLighting hearts with gentle grace."
+      },
+      {
+        "title": "Whispers of the Night",
+        "text": "Stars twinkle softly, a lullaby,\nMoonlight dances across the sky.\nDreams take flight on wings of peace,\nNight's calm whispers never cease."
+      }
+    ],
+    "songs": [
+      {
+        "title": "Melody of the Heart",
+        "text": "Beats that echo deep inside,\nWhere secrets and feelings reside.\nA song that never fades away,\nPlaying softly every day."
+      }
+    ]
+  }
+  
