@@ -1,5 +1,5 @@
 
-  const correctPassword = "123"; // Change your password here
+  const correctPassword = "shrea"; // Change your password here
 
   let poems = [];
   let songs = [];
