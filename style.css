@@ -161,3 +161,28 @@ header {
       font-size: 1.3rem;
     }
   }
+#playlistFooter {
+    position: fixed;
+    bottom: 20px;
+    left: 70%;
+    transform: translateX(-50%);
+    background-color: #ffe3f0;
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  
+  #playlistFooter a {
+    color: #b30059;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    transition: color 0.3s;
+  }
+  
+  #playlistFooter a:hover {
+    color: #ff007f;
+  }
